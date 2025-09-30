@@ -1,3 +1,60 @@
-data/texts/*
-data/images/*
+# ==============================
+# Python / Conda / Jupyter
+# ==============================
+
+# Bytecode i cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Środowiska virtualne
+.env
+.venv
+env/
+venv/
+*.env
+*.conda
+*.yml
+
+# Pliki Anacondy
+*.conda-env
+*.spec
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_convert*
+
+# ==============================
+# Hugging Face / Modele / Cache
+# ==============================
+.cache/
+huggingface/
+transformers_cache/
+datasets/
+wandb/
+
+# ==============================
+# Dane projektu
+# ==============================
+
+# ignorujemy obrazy i teksty
+data/images/
+data/texts/
+
+# ale zachowujemy pusty folder data
 !data/.gitkeep
+
+# ==============================
+# Logi / wyniki
+# ==============================
+*.log
+*.out
+*.err
+
+# ==============================
+# Systemowe
+# ==============================
+.DS_Store
+Thumbs.db
